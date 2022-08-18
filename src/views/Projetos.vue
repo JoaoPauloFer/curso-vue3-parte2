@@ -14,7 +14,7 @@
                 </button>
             </div>
         </form>
-        <table>
+        <table class="table is-fullwidth">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -38,7 +38,7 @@ export default defineComponent({
     name: 'Projetos',
     data(){
         return {
-            nomeDoProjeto: "",
+            nomeDoProjeto: '',
             projetos: [] as IProjeto[]
         };
     },
@@ -56,7 +56,7 @@ export default defineComponent({
 
 </script>
 
-<style>
+<style scoped>
 .projetos {
     padding: 1.25rem;
 }
