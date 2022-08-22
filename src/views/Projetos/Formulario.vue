@@ -55,7 +55,7 @@ export default defineComponent({
                 this.store.commit(ADICIONA_PROJETO, this.nomeDoProjeto)
             }
             this.nomeDoProjeto = "";
-            this.notificar(TipoNotificacao.ATENCAO, 'Exelente!', 'O projeto foi cadastrado com sucesso')
+            this.notificar(TipoNotificacao.SUCESSO, 'Exelente!', 'O projeto foi cadastrado com sucesso')
             this.$router.push('/projetos')   
         },
     },
